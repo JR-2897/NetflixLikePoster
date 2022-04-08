@@ -32,8 +32,9 @@ public class PosterController {
 
 	RestTemplate restTemplate = new RestTemplate();
 
-	String urlUser = "http://localhost:8081/";
-
+	//String urlUser = "http://localhost:8081/";
+	String urlUser = "http://user-webservice-app:8081/";
+	
 	@PostMapping("/all/posters")
 	public ResponseEntity<List<Poster>> getAllPoster(@RequestBody int idUser) throws JsonProcessingException {
 		ObjectMapper mapper = new ObjectMapper();
