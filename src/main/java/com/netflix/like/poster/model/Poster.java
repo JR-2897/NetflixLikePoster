@@ -15,13 +15,13 @@ public class Poster implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	private Integer id;
-	private List<String> urlImage;
+	private List<String> listUrlImage;
 	private Integer idMedia;
 
-	public Poster(Integer id, List<String> urlImage, Integer idMedia) {
+	public Poster(Integer id, List<String> listUrlImage, Integer idMedia) {
 		super();
 		this.id = id;
-		this.urlImage = urlImage;
+		this.listUrlImage = listUrlImage;
 		this.idMedia = idMedia;
 	}
 
@@ -33,12 +33,12 @@ public class Poster implements Serializable {
 		this.id = id;
 	}
 
-	public List<String> getUrlImage() {
-		return urlImage;
+	public List<String> getListUrlImage() {
+		return listUrlImage;
 	}
 
-	public void setUrlImage(List<String> urlImage) {
-		this.urlImage = urlImage;
+	public void setListUrlImage(List<String> listUrlImage) {
+		this.listUrlImage = listUrlImage;
 	}
 
 	public Integer getIdMedia() {
